@@ -50,6 +50,22 @@ main{
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
+.box-quantity-followers{
+    display: flex;
+    gap: 0.3rem;
+    position: relative;
+    top: -1rem;
+    left: -1rem;
+}
+
+.box-quantity-followers p{
+    margin: 0 0 1rem;
+}
+
+span{
+    color: var(--graySmooth);
+}
+
 h1{
     color: var(--graySmooth);
     margin: 1.5rem 0 1rem;

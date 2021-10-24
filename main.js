@@ -17,12 +17,19 @@ changeSocialMedias()
 
 async function getInfosProfileGithub() {
     const urlProfile = `https://api.github.com/users/${linksSocialMedias.github}`
-    
-    const promisse = await fetch(urlProfile).then((responseProfile) => {
-        return responseProfile.json()
-    })
 
-    console.log(promisse)
+    await fetch(urlProfile).then((responseProfile) => {
+        responseProfile.json()
+        .then((dataResponse) => {
+            username.textContent = dataResponse.name
+            usernameLogin.textContent = dataResponse.login
+            userLinkProfile.href = dataResponse.html_url
+            photoProfile.src = dataResponse.avatar_url
+            aboutMe.textContent = dataResponse.bio
+            quantityFollowers.textContent = dataResponse.followers 
+            quantityFollowing.textContent = dataResponse.following
+        })
+    })
 }
 
 getInfosProfileGithub()
