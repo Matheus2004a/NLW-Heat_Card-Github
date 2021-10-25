@@ -9,8 +9,16 @@
 
 :root{
     --black: hsla(240, 6%, 13%, 1);
+    --color-socials: #35353c;
+    --color-insta: #D91A4D;
+    --color-face: #1B8EF2;
+    --color-linkedin: #0378A6;
     --graySmooth: hsla(240, 9%, 89%, 1);
     --gray: hsla(240, 7%, 78%, 1);
+}
+
+html{
+    overflow-x: hidden;
 }
 
 body{
@@ -20,9 +28,10 @@ body{
 }
 
 main{
-    width: 24rem;
-    height: 50.75rem;
-    background-image: url(img/background.svg);
+    width: 100vw;
+    height: 100vh;
+    min-height: 50.75rem;
+    background: url(img/background.svg) no-repeat center/cover;
 }
 
 .container{
@@ -30,6 +39,10 @@ main{
     place-items: center;
     max-width: 250px;
     margin: 0 auto;
+}
+
+.name-tag{
+    display: none;
 }
 
 .avatar{
@@ -91,7 +104,7 @@ ul{
 }
 
 ul li{
-    background-color: #35353c;
+    background-color: var(--color-socials);
     border-radius: 3px;
 }
 
@@ -109,27 +122,27 @@ ul li figure{
 }
 
 .instagram:hover i {
-    color: #D91A4D;
+    color: var(--color-insta);
 }
 
 .instagram:hover figure{
-    border: 0.5px solid #D91A4D;
+    border: 0.5px solid var(--color-insta);
 }
 
 .facebook:hover i{
-    color: #1B8EF2;
+    color: var(--color-face);
 }
 
 .linkedIn:hover i{
-    color: #0378A6;
+    color: var(--color-linkedin);
 }
 
 .facebook:hover figure{
-    border: 1px solid #1B8EF2;
+    border: 1px solid var(--color-face);
 }
 
 .linkedIn:hover figure{
-    border: 1px solid #0378A6;
+    border: 1px solid var(--color-linkedin);
 }
 
 ul li a figure{
@@ -139,4 +152,41 @@ ul li a figure{
 ul li a i{
     font-size: 1.5rem;
     color: #fff;
+}
+
+@media (min-width: 1200px) {
+    body{
+        background-image: linear-gradient(#FF6400,#121214,#09090A,#202024);
+    }
+
+    main{
+        width: 45vw;
+        height: 33.75rem;
+        margin: 10rem 0;
+        box-shadow: #3e3737 1px 4px 10px 6px;
+    }
+
+    .container{
+        position: relative;
+        top: -1rem;
+    }
+
+    .name-tag{
+        display: block;
+    }
+
+    .faixa{
+        display: grid;
+        margin: 0 auto;
+        top: -8rem;
+        position: absolute;
+        justify-items: center;
+    } 
+
+    #range{
+        width: 4rem;
+        height: 9.875rem;
+        position: relative;
+        bottom: -10px;
+    }
 }
