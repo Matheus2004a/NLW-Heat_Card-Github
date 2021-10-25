@@ -95,6 +95,11 @@ ul li{
     border-radius: 3px;
 }
 
+ul li:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
 ul li figure{
     border-radius: 3px;
 }
