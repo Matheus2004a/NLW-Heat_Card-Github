@@ -17,9 +17,9 @@ changeSocialMedias()
 async function getInfosProfileGithub() {
     const urlProfile = `https://api.github.com/users/${linksSocialMedias.github}`
 
-    await fetch(urlProfile).then((responseProfile) => {
+    await fetch(urlProfile).then(responseProfile => {
         responseProfile.json()
-        .then((dataResponse) => {
+        .then(dataResponse => {
             username.textContent = dataResponse.name
             usernameLogin.textContent = dataResponse.login
             userLinkProfile.href = dataResponse.html_url
