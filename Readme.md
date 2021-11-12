@@ -1,7 +1,10 @@
 # Consumo de API do perfil do Github
 
-Projeto construído na versão mobile (logo menos vou implementar a desktop) durante o evento NLW Heat da Rockeseat. A intenção dele foi para mim revisar alguns conceitos sobre consumo de API, como exibir todos os dados mandados por ela no Front-End e compreender melhor a passagem das promisses após efetuar a requisição do endereço da API
+<h1 align="center">
+    <img src="img/logo-do-while.svg" width="450px">
+</h1>
 
+Projeto construído na versão mobile (logo menos vou implementar a desktop) durante o evento NLW Heat da Rockeseat. A intenção dele foi para mim revisar alguns conceitos sobre consumo de API, como exibir todos os dados mandados por ela no Front-End e compreender melhor a passagem das promisses após efetuar a requisição do endereço da API.
 
 ## Endereço da API
 
